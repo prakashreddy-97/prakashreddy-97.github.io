@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="utf-8">
+	<meta name="description" content="">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>My Tickets</title>
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css">
+	<link rel="stylesheet" href="W04.css">
+</head>
+
+<body>
+	<!-- BootStrap navbar menu changes with the screen size-->
+	<nav class="navbar navbar-inverse navbar-fixed-top">
+		<div class="container">
+			<div class="navbar-header">
+				<button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false"
+				 aria-controls="navbar">
+					<span class="sr-only">Toggle navigation</span>
+					<span class="icon-bar"></span>
+					<span class="icon-bar"></span>
+					<span class="icon-bar"></span>
+				</button>
+				<a class="navbar-brand" href="file:///C:/A01/index.html">Home</a>
+				
+			</div>
+			<div id="navbar" class="navbar-collapse collapse">
+				<ul class="nav navbar-nav">
+					<li>
+						<a href="About.html">About</a>
+					</li>
+					<li>
+						<a href="file:///C:/A01/contact.html">Contact</a>
+					</li>
+				</ul>
+			</div>
+		</div>
+	</nav>
+
+	<!-- A BootStrap container is used to adjust the layout of the contents based on screen size. .container uses pre-built screen sizes, while .container-fluid adjusts continously.-->
+	<div class="container-fluid">
+		<!-- BootStrap grid system using one row that could have several columns (when the screen size is large enough) -->
+		<div class="row">
+			<div class="col-sm-12">
+				
+				<p>Click the button to book tickets.</p>
+				<br>
+				<!-- http://v4-alpha.getbootstrap.com/components/buttons/ -->
+				<button onclick="App.launch()" class="btn btn-lg btn-danger">Click me</button>
+				<br/>
+				<br/>
+				<aside id="clicks"></aside>
+			</div>
+			<div class="col-sm-12">
+				<span class="displayText">Name:</span>
+				<span id= "name"></span>
+				<br/>
+				<span class="displayText">Organisation:</span>
+				<span id="org"></span>
+				<br/>
+				<span class="displayText">No. of students ~</span>
+				<span id="count"> </span>
+				
+				<span class="displayText">students</span>
+				<br/>
+				<span id="displayPlace">&nbsp;</span>
+				<div class="displayExploreButtons">
+					<button onclick="App.exploreHtml()" class="btn btn-lg btn-primary" id="btnExploreHtml">Explore the HTML</button>
+					<button onclick="App.exploreCode()" class="btn btn-lg btn-primary" id="btnExploreCode">Explore the Code</button>
+				</div>	
+			</div>
+		</div>
+	</div>
+	<!-- /container -->
+	<script src="https://code.jquery.com/jquery-3.1.0.min.js"></script>
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+	<script src="W04.js"></script>
+</body>
+
+</html>
